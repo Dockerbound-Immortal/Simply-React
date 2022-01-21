@@ -1,5 +1,5 @@
 import React from 'react';
-import ExpenseDate from '../ExpenseDate/ExpenseDate.component';
+import ExpenseDate from './ExpenseDate/ExpenseDate.component';
 import PriceTag from './PriceTag/PriceTag.component';
 import './ExpenseItem.styles.css';
 
