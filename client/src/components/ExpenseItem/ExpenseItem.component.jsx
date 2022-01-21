@@ -6,7 +6,6 @@ const ExpenseItem = ({
     date, 
     amount
 }) => {
-
     return (
         <div className="expense-item">
             <div>{date.toISOString()}</div>
