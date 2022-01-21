@@ -1,4 +1,7 @@
 import React from 'react';
+import ExpenseDate from '../ExpenseDate/ExpenseDate.component';
+import PriceTag from '../PriceTag/PriceTag.component';
+import './ExpenseItem.styles.css';
 import './ExpenseItem.styles.css';
 
 const ExpenseItem = ({
@@ -6,22 +9,12 @@ const ExpenseItem = ({
     date, 
     amount
 }) => {
-
-    const month = date.toLocaleString('en-GB', { month: 'long' } );
-    const day = date.toLocaleString('en-GB', { day: '2-digit' });
-    const year = date.getFullYear();
-
-
     return (
         <div className="expense-item">
-            <div>
-                <div>{month}</div>
-                <div>{year}</div>
-                <div>{day}</div>
-            </div>
+            <ExpenseDate date={date} />
             <div className="expense-item__description">
                 <h2>{title}</h2>
-                <div className="expense-item__price">£{amount}</div>
+                <PriceTag amount={amount} />
             </div>
         </div>
     );
