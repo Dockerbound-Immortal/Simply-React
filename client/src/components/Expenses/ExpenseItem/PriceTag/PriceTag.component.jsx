@@ -1,5 +1,5 @@
 import React from 'react';
-import currencyMapping from '../../../constants/currencyMapping';
+import currencyMapping from '../../../../constants/currencyMapping';
 import './PriceTag.styles.css';
 
 const PriceTag = ({
