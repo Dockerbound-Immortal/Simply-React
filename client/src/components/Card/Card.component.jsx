@@ -1,12 +1,13 @@
 import React from 'react'
-import ExpenseItem from '../Expenses/ExpenseItem/ExpenseItem.component';
 import './Card.style.css'
 
 const Card = ({
     children,
     classes,
 }) => (
-    <div className={classes.ExpenseItem}>{children}</div>
-)
+    <div className={`card ${classes}`}>
+        {children}
+    </div>
+);
 
 export default Card; 

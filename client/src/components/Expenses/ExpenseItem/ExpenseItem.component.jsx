@@ -9,9 +9,9 @@ const ExpenseItem = ({
     date, 
     amount
 }) => (
-    <Card classes={{
-        ExpenseItem: 'expense-item'
-    }}>
+    <Card 
+        classes={`expense-item`}
+    >
         <ExpenseDate date={date} />
         <div className='expense-item__description'>
             <h2>{title}</h2>
