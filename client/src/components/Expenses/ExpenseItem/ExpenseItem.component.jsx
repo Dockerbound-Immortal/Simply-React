@@ -12,8 +12,16 @@ const ExpenseItem = ({
 
     const [rubric, setRubric] = useState(title);
 
+    /**
+     * Notice how when the log runs the old
+     * value is logged. This is because the set function
+     * on the state does not immediately run the update
+     * on the title. Instead, it schedules the state 
+     * to be updated on the next render.
+     */
     const handleOnClick = () => {
         setRubric('Updated');
+        console.log(title);
     };
 
     return (
